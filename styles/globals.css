@@ -1,0 +1,13 @@
+:root {
+    --lightgrey: #eef0eb;
+    --ashgrey: #b4b8ab;
+    --ivory: #f4f9e9;
+    --indigo: #284b63;
+    --darkblue: #153243;
+    
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+}

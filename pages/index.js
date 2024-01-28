@@ -14,7 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-      <SideBar/>
+        <div className={styles.content}>
+          <SideBar className={styles.sideBarPosition} />
+        </div>
+
       </main>
     </>
   );

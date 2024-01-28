@@ -1,10 +1,13 @@
 import styles from "./button.module.css"
 
-export default function menuButton() {
-    const variableText = "";
+export default function MenuButton() {
+    const variableText = "Default";
 
     return(
-    <div>
-
-    </div>
+    <button
+    className={styles.menuFormat}
+    style={{backgroundColor: "red"}}
+    >
+        {variableText} Meow
+    </button>
     )}

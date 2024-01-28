@@ -1,8 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import SideBar from "@/components/sidebar";
-
+import SideBar from "@/components/sidebar/index.js";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
         <div className={styles.content}>
           <SideBar className={styles.sideBarPosition} />
         </div>
-
       </main>
     </>
   );

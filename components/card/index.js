@@ -1,11 +1,12 @@
 import styles from "./card.module.css"
 import { useState } from "react";
+import Link from 'next/link'
 
 export default function FruitCard() {
     const cardDescription = "Default";
     const cardTitle = "Default";
     const [hover, setHover] = useState(false);
-    const [backgroundColor, setBackgroundColor] = useState("var( --lightgrey)");
+    const [backgroundColor, setBackgroundColor] = useState("");
 
     function MouseHover() {
         setHover(true)
@@ -13,28 +14,30 @@ export default function FruitCard() {
     }
     function MouseExit() {
         setHover(false)
-        setBackgroundColor("var( --lightgrey)");
+        setBackgroundColor("");
     }
+
     return (
         <>
-            <div
+            <Link
+                href=''//Put link to fruit page here after applying a function to generate which fruit based on bits
                 className={styles.card}
                 onMouseEnter={MouseHover}
                 onMouseLeave={MouseExit}
                 style={{
                     backgroundColor,
-                    transition: "background-color 0.5s ease",
-                    borderRadius: "1rem"
+                    transition: "background-color 0.2s ease",
+                    borderRadius: "1rem",
+                    textDecoration: "none",
                 }}
             >
-                <div
+                <span
                     className={styles.cardTitle}
-
-                >{cardTitle}</div>
-                <div
-                    className={styles.cardTitle}
-                >{cardDescription}</div>
-            </div>
+                >{cardTitle}</span>
+                <span
+                    className={styles.cardDescription}
+                >{cardDescription}</span>
+            </Link>
         </>
     )
 }

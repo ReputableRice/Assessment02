@@ -1,9 +1,7 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/tabbar/index.js";
-import FruitCard from "@/components/card";
-import SideBar from "@/components/sidebar";
+
 
 export default function Home() {
   return (
@@ -17,17 +15,7 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.content}>
           <NavBar className={styles.navBarPosition} />
-          <div
-            className={styles.mainContent}>
-            <div className={styles.cardContent}>
-              <FruitCard href = "/FruitOne"/>
-              <FruitCard />
-              <FruitCard />
-            </div>
-            <div className={styles.sideBarPosition}>
-              <SideBar />
-            </div>
-          </div>
+        
         </div>
       </main>
     </>

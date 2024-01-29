@@ -23,7 +23,7 @@ export default function MenuButton() {
             onMouseEnter={MouseHover}
             onMouseLeave={MouseExit}
         >
-            {variableText} Meow
+            {variableText}
         </button>
     )
 }

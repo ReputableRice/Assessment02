@@ -1,6 +1,29 @@
 .card {
+    min-width: 20rem;
     max-width: 20rem;
-    min-height: 10rem;
+    height: 5rem;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    margin-top: 2rem;
+    margin-left: 2rem;
+
+    color: var(--darkblue);
 }
 
+.cardTitle {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.cardDescription {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card:hover {
+    cursor: pointer;
+}

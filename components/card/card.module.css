@@ -1,7 +1,6 @@
 .card {
     min-width: 20rem;
     max-width: 20rem;
-    height: 5rem;
     overflow: hidden;
 
     display: flex;

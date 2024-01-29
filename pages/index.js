@@ -23,6 +23,9 @@ export default function Home() {
               <FruitCard href = "/FruitOne"/>
               <FruitCard />
               <FruitCard />
+              <FruitCard />
+              <FruitCard />
+              <FruitCard />
             </div>
             <div className={styles.sideBarPosition}>
               <SideBar />

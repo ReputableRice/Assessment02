@@ -7,14 +7,18 @@ export default function FruitCard() {
     const cardTitle = "Default";
     const [hover, setHover] = useState(false);
     const [backgroundColor, setBackgroundColor] = useState("");
+    const [height, setHeight] = useState("5rem");
 
     function MouseHover() {
         setHover(true)
         setBackgroundColor("var( --ashgrey)");
+        setHeight("10rem");
+ 
     }
     function MouseExit() {
         setHover(false)
         setBackgroundColor("");
+        setHeight("5rem");
     }
 
     return (
@@ -26,9 +30,10 @@ export default function FruitCard() {
                 onMouseLeave={MouseExit}
                 style={{
                     backgroundColor,
-                    transition: "background-color 0.2s ease",
+                    transition: "background-color 0.2s ease , height 0.2s ease",
                     borderRadius: "1rem",
                     textDecoration: "none",
+                    height
                 }}
             >
                 <span

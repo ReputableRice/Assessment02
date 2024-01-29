@@ -1,8 +1,8 @@
-import styles from "./sidebar.module.css"
+import styles from "./navbar.module.css"
 import { useState, useEffect } from "react";
 import MenuButton from "@/components/button"
 
-export default function SideBar() {
+export default function NavBar() {
     const [hover, setHover] = useState(false);
     const [backgroundColor, setBackgroundColor] = useState("var( --lightgrey)");
     
@@ -19,7 +19,7 @@ export default function SideBar() {
 
     return (
         <div 
-        className={styles.sideBar}
+        className={styles.navBar}
         onMouseEnter={MouseHover}
         onMouseLeave={MouseExit}
         style={{
@@ -27,10 +27,13 @@ export default function SideBar() {
             transition: 'background-color 0.5s ease'
         }}
         >
-            <div className={styles.sideBarInnerContainer}>
-                <h1>Fruit Jam</h1>
-                <h2>Fruity Fun Facts!</h2>
-                <MenuButton/>
+            <div className={styles.navBarInnerContainer}>
+                <h1 className={styles.headerPosition}>Fruit Jam</h1>
+                <div className={styles.buttonGroup}>
+                    <MenuButton className={styles.buttonPosition}/>
+                    <MenuButton className={styles.buttonPosition}/>
+                    <MenuButton className={styles.buttonPosition}/>
+                </div>
             </div>
         </div>
     )}

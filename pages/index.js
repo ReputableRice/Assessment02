@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@/styles/Home.module.css";
-import SideBar from "@/components/sidebar/index.js";
-import fruitCard from "@/components/card";
+import NavBar from "@/components/tabbar/index.js";
+import FruitCard from "@/components/card";
 
 export default function Home() {
   return (
@@ -15,8 +15,10 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.content}>
-          <SideBar className={styles.sideBarPosition} />
-          <fruitCard/>
+          <NavBar className={styles.navBarPosition} />
+          <div className={styles.cardContent}>
+            <FruitCard />
+          </div>
         </div>
       </main>
     </>

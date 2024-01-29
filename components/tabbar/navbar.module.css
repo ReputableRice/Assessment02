@@ -1,0 +1,21 @@
+.navBar {
+    min-width: 100vw;
+    min-height: 5rem;
+}
+
+.navBarInnerContainer {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.headerPosition {
+    margin-left: 10rem;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}

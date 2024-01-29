@@ -1,0 +1,14 @@
+.menuFormat {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--ashgrey);
+
+    border: none;
+    border-radius: 2rem;
+    margin: 1rem;
+
+    min-width: 10rem;
+    max-height: 3rem;
+
+}

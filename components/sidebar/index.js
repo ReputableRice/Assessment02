@@ -1,9 +1,10 @@
 import styles from "./sidebar.module.css"
 import { useState, useEffect } from "react";
+import MenuButton from "@/components/button"
 
 export default function SideBar() {
     const [hover, setHover] = useState(false);
-    const [backgroundColor, setBackgroundColor] = useState("blue");
+    const [backgroundColor, setBackgroundColor] = useState("var( --lightgrey)");
     
     function MouseHover() {
         setHover(true)
@@ -29,6 +30,7 @@ export default function SideBar() {
             <div className={styles.sideBarInnerContainer}>
                 <h1>Fruit Jam</h1>
                 <h2>Fruity Fun Facts!</h2>
+                <MenuButton/>
             </div>
         </div>
     )}

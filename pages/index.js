@@ -20,11 +20,6 @@ export default function Home() {
           <div
             className={styles.mainContent}>
             <div className={styles.cardContent}>
-              <FruitCard href = "/FruitOne"/>
-              <FruitCard />
-              <FruitCard />
-              <FruitCard />
-              <FruitCard />
               <FruitCard />
             </div>
             <div className={styles.sideBarPosition}>

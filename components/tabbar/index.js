@@ -1,6 +1,7 @@
 import styles from "./navbar.module.css"
 import { useState, useEffect } from "react";
 import MenuButton from "@/components/button"
+import Image from "next/image";
 
 export default function NavBar() {
     const [hover, setHover] = useState(false);
@@ -15,8 +16,6 @@ export default function NavBar() {
         setBackgroundColor("var( --lightgrey)");
       }
 
-      //const MouseHover = setHover(true) & setBackgroundColor("var( --ashgrey)");
-
     return (
         <div 
         className={styles.navBar}
@@ -28,11 +27,9 @@ export default function NavBar() {
         }}
         >
             <div className={styles.navBarInnerContainer}>
-                <h1 className={styles.headerPosition}>Fruit Jam</h1>
+                <img src='/images/logo.png' className={styles.headerPosition}/>
+    
                 <div className={styles.buttonGroup}>
-                    <MenuButton className={styles.buttonPosition}/>
-                    <MenuButton className={styles.buttonPosition}/>
-                    <MenuButton className={styles.buttonPosition}/>
                 </div>
             </div>
         </div>

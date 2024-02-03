@@ -4,6 +4,7 @@ import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/tabbar/index.js";
 import FruitCard from "@/components/card";
 import SideBar from "@/components/sidebar";
+import FooterFruit from "@/components/footer";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <FooterFruit/>
     </>
   );
 }

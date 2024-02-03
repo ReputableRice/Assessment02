@@ -6,8 +6,11 @@
     --darkblue: #153243;
     
     font-size: 12px;
+    min-width: 100vw;
 }
 
 body {
     margin: 0;
+    background-image: url('/images/background.png');
+    background-size: cover;
 }

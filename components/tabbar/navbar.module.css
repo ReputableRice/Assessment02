@@ -9,14 +9,6 @@
 }
 
 .headerPosition {
-    margin-left: 10rem;
-    
+    margin: auto;
     height: 5rem;
-}
-
-.buttonGroup {
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
 }

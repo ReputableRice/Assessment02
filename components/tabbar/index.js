@@ -28,9 +28,6 @@ export default function NavBar() {
         >
             <div className={styles.navBarInnerContainer}>
                 <img src='/images/logo.png' className={styles.headerPosition}/>
-    
-                <div className={styles.buttonGroup}>
-                </div>
             </div>
         </div>
     )}

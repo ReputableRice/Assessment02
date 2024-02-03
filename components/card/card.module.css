@@ -1,42 +1,96 @@
+/*Everything Container*/
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /*Input Box*/
+.inputFruit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50rem;
+}
+
 .inputBitmask {
-    margin: auto;
-    width: 50vw;
+    width: 20rem;
     height: 3rem;
 
     font-family: Arial, Helvetica, sans-serif;
-    text-indent: 1rem;
+    text-align: center;
 
     border-radius: 1rem;
     background-color: var(--lightgrey);
+
+    filter: drop-shadow(0 0.4rem 0 var(--ashgrey));
 }
 
 .inputBitmask::placeholder {
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 1rem;
+    text-align: center;
 }
 
 /*CARD*/
 .card {
-    display: none;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 1rem;
 
+    width: 50rem;
     border-radius: 1rem;
-    width: 10rem;
+}
+
+.card:hover {
+    filter: drop-shadow(0 0.4rem 0 var(--indigo));
 }
 
 /*TEXT*/
 .fruitTitle {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: auto;
 }
 
 .fruitDescription {
+    grid-column: 1/2;
     text-wrap: wrap;
+    width: 30rem;
 
 }
 
 .fruitText {
     padding: 1rem;
     font-family: Arial, Helvetica, sans-serif;
+}
 
+/*IMAGE*/
+
+.fruitImage {
+    grid-column: 2/3;
+    grid-row: 1/ span 2;
+    margin: auto;
+    width: 50%;
+}
+
+/*Tablet*/
+@media (min-width: 701px) and (max-width: 1120px) {
+    .card {
+        width: 50rem;
+    }
+}
+
+/*Mobile*/
+
+@media (max-width: 700px) {
+    .card {
+        width: auto;
+        border-radius: 0;
+    }
+
+    .fruitImage {
+        position: absolute;
+    }
 }

@@ -3,8 +3,6 @@
     flex-direction: column;
     flex-wrap: wrap;
 
-    min-width: none;
-
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
     font-style: italic;
@@ -24,7 +22,7 @@
 }
 
 /*Tablet*/
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 415px) and (max-width: 820px) {
     .sideBarformatting {
         align-items: center;
     }
@@ -33,9 +31,9 @@
     }
 }
 /*Mobile*/
-@media (max-width: 700px)  {
+@media (max-width: 414px)  {
     .sideBarformatting {
-        align-items: center;
+        text-align: center;
     }
     .mainText {
         display:none;

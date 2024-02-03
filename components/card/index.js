@@ -22,7 +22,7 @@ export default function Home() {
                     <input
                         id='input'
                         type='text'
-                        placeholder='Insert Number For a Fruit!'
+                        placeholder='Type a Number For Some Fruit!'
                         value={input}
                         onChange={event => setInput(event.target.value)}
                         className={styles.inputBitmask}

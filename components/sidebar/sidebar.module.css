@@ -22,7 +22,7 @@
 }
 
 /*Tablet*/
-@media (min-width: 415px) and (max-width: 820px) {
+@media (min-width: 701px) and (max-width: 1120px)  {
     .sideBarformatting {
         align-items: center;
     }
@@ -31,7 +31,7 @@
     }
 }
 /*Mobile*/
-@media (max-width: 414px)  {
+@media (max-width: 700px)  {
     .sideBarformatting {
         text-align: center;
     }

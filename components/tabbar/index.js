@@ -1,15 +1,14 @@
 import styles from "./navbar.module.css"
 import { useState, useEffect } from "react";
-import MenuButton from "@/components/button"
-import Image from "next/image";
+import LogoOverlay from "../logo";
 
 export default function NavBar() {
     const [hover, setHover] = useState(false);
-    const [backgroundColor, setBackgroundColor] = useState("var( --lightgrey)");
+    const [backgroundColor, setBackgroundColor] = useState("var( --indigo)");
     
     function MouseHover() {
         setHover(true)
-        setBackgroundColor("var( --ashgrey)");
+        setBackgroundColor("var( --darkblue)");
       }
       function MouseExit(){
         setHover(false)
@@ -27,7 +26,7 @@ export default function NavBar() {
         }}
         >
             <div className={styles.navBarInnerContainer}>
-                <img src='/images/logo.png' className={styles.headerPosition}/>
+                <LogoOverlay/>
             </div>
         </div>
     )}

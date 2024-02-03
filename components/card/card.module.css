@@ -12,30 +12,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 50rem;
 }
 
 .inputBitmask {
     width: 20rem;
     height: 3rem;
-
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-
     border-radius: 1rem;
     background-color: var(--lightgrey);
-
     filter: drop-shadow(0 0.4rem 0 var(--ashgrey));
 }
 
 .inputLine {    
     margin: auto;
-
     width: 10rem;
     height: 0.5rem;
     border-radius: 1rem;
-
     background-color: var(--lightgrey);
 
 }
@@ -49,9 +43,10 @@
 /*CARD*/
 .card {
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 
     width: 50rem;
+    border: 1px solid var(--lightgrey);
     border-radius: 1rem;
 }
 
@@ -61,15 +56,14 @@
 
 /*TEXT*/
 .fruitTitle {
-    grid-column: 1/2;
+    grid-column: 1/ span 2;
     grid-row: 1/2;
-    margin-bottom: auto;
+    margin: auto
 }
 
 .fruitDescription {
     grid-column: 1/2;
     width: 30rem;
-
     text-indent: 1rem;
 }
 
@@ -88,7 +82,7 @@
 }
 
 /*Tablet*/
-@media (min-width: 415px) and (max-width: 820px)  {
+@media (min-width: 701px) and (max-width: 1120px)  {
     .inputFruit{
         margin: 3rem;
     }
@@ -99,19 +93,28 @@
 
 /*Mobile*/
 
-@media (max-width: 414px) {
+@media (max-width: 700px)  {
     .inputFruit{
         margin: 3rem;
     }
     .card {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 0.2fr 0.2fr 1fr;
         width: auto;
         border-radius: 0;
     }
-
-    .fruitImage {
-        grid-column: 1/2;
+    .fruitTitle {
+        grid-column: 1/ span 2;
         grid-row: 1/2;
+    }
+    .fruitImage {
+        grid-column: 1/ span 2;
+        grid-row: 2/3;
         width: 20%;
         margin-top: 1rem;
+    }
+    .fruitDescription {
+        grid-column: 1/ span 2;
+        grid-row: 3/ span 4;
     }
 }

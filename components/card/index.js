@@ -3,31 +3,28 @@ import { useState } from "react";
 import { fruitNames } from "@/inventory/inventory";
 
 
-export default function Home() {
-    const [input, setInput] = useState(); //stores the input that the user enters
+export default function Card() {
+    const [input, setInput] = useState();
 
     const getCardStyle = flagValue => (input & flagValue) > 0 ? {
         display: 'grid',
-        opacity: '1',
-
         backgroundColor: 'var(--darkblue)',
         color: 'var(--ivory)',
-
-    } : { display: 'none', opacity: '0' };
+    } : { display: 'none' };
 
     return (
         <>
             <div className={styles.main}>
                 <div className={styles.inputFruit}>
                     <div className={styles.inputLine}></div>
-                        <input
-                            id='input'
-                            type='text'
-                            placeholder='Type a Number For Some Fruit!'
-                            value={input}
-                            onChange={event => setInput(event.target.value)}
-                            className={styles.inputBitmask}
-                        />
+                    <input
+                        id='input'
+                        type='text'
+                        placeholder='Type a Number For Some Fruit!'
+                        value={input}
+                        onChange={event => setInput(event.target.value)}
+                        className={styles.inputBitmask}
+                    />
                     <div className={styles.inputLine}></div>
                 </div>
                 {

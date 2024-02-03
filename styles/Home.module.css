@@ -22,7 +22,7 @@
 }
 
 /*Tablet*/
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 701px) and (max-width: 1120px)  {
   .mainContent {
     flex-direction: column-reverse;
   }

@@ -1,13 +1,19 @@
 .footerFruit {
-    width: 100vw;
-    min-height: 5rem;
+    height: 7rem;
+    padding-bottom: 1rem;
 
     display: flex;
     flex-direction: column;
     justify-content:flex-end;
     align-items: center;
 
+    background-color: var(--indigo);
+}
+
+.footerText {
     color: var(--ivory);
     font-family: Arial, Helvetica, sans-serif;
 
+    margin: 0.2rem;
 }
+

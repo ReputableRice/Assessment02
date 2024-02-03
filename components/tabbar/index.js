@@ -13,7 +13,7 @@ export default function NavBar() {
       }
       function MouseExit(){
         setHover(false)
-        setBackgroundColor("var( --lightgrey)");
+        setBackgroundColor("var( --indigo)");
       }
 
     return (

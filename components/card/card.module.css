@@ -7,6 +7,7 @@
 }
 
 /*Input Box*/
+
 .inputFruit {
     display: flex;
     justify-content: center;
@@ -26,6 +27,17 @@
     background-color: var(--lightgrey);
 
     filter: drop-shadow(0 0.4rem 0 var(--ashgrey));
+}
+
+.inputLine {    
+    margin: auto;
+
+    width: 10rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+
+    background-color: var(--lightgrey);
+
 }
 
 .inputBitmask::placeholder {

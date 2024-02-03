@@ -19,14 +19,16 @@ export default function Home() {
         <>
             <div className={styles.main}>
                 <div className={styles.inputFruit}>
-                    <input
-                        id='input'
-                        type='text'
-                        placeholder='Type a Number For Some Fruit!'
-                        value={input}
-                        onChange={event => setInput(event.target.value)}
-                        className={styles.inputBitmask}
-                    />
+                    <div className={styles.inputLine}></div>
+                        <input
+                            id='input'
+                            type='text'
+                            placeholder='Type a Number For Some Fruit!'
+                            value={input}
+                            onChange={event => setInput(event.target.value)}
+                            className={styles.inputBitmask}
+                        />
+                    <div className={styles.inputLine}></div>
                 </div>
                 {
                     Object.keys(fruitNames).map(item => (
@@ -44,6 +46,7 @@ export default function Home() {
                             </p>
                             <img
                                 src={fruitNames[item].image}
+                                alt={fruitNames[item].alt}
                                 className={styles.fruitImage}
                             />
                         </div>

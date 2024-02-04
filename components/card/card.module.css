@@ -86,7 +86,6 @@
 }
 
 /*IMAGE*/
-
 .fruitImage {
     grid-column: 2/3;
     grid-row: 1/ span 2;
@@ -99,32 +98,36 @@
     .inputFruit{
         margin: 3rem;
     }
+    
     .card {
         width: 50rem;
     }
 }
 
 /*Mobile*/
-
 @media (max-width: 700px)  {
     .inputFruit{
         margin: 3rem;
     }
+
     .card {
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 0.2fr 0.2fr 1fr;
         width: auto;
     }
+
     .fruitTitle {
         grid-column: 1/ span 2;
         grid-row: 1/2;
     }
+
     .fruitImage {
         grid-column: 1/ span 2;
         grid-row: 2/3;
         width: 20%;
         margin-top: 1rem;
     }
+
     .fruitDescription {
         grid-column: 1/ span 2;
         grid-row: 3/ span 4;

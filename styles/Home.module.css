@@ -14,11 +14,12 @@
 .mainContent {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: 8rem;
 }
 
 .sideBarPosition {
-  margin-left: auto;
+  margin: 1rem 0 0 2rem;
 }
 
 /*Tablet*/
@@ -34,9 +35,9 @@
 @media (max-width: 700px)  {
   .mainContent {
     flex-direction: column-reverse;
-    margin: 4rem;
+    margin: 2rem;
   }
   .sideBarPosition {
-    margin-left: none;
+    margin-left: 0;
   }
 }

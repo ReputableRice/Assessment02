@@ -11,7 +11,8 @@ export default function FooterFruit() {
                     width: '10vw',
                     display: 'flex',
                     justifyContent: 'space-around',
-                    margin: 'auto'
+                    margin: 'auto',
+                    opacity: '0.5'
                     }}>
                     {
                         Object.keys(fruitNames).map(item => (

@@ -31,7 +31,7 @@
     height: 0.5rem;
     border-radius: 1rem;
     background-color: var(--lightgrey);
-
+    filter: drop-shadow(0 0.4rem 0 var(--darkblue));
 }
 
 .inputBitmask::placeholder {
@@ -42,12 +42,15 @@
 
 /*CARD*/
 .card {
+    display: none;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.3fr 1fr;
     margin-top: 1.5rem;
-
     width: 50rem;
-    border: 1px solid var(--lightgrey);
-    border-radius: 1rem;
+    padding:0.5rem;
+
+    filter: drop-shadow(0 0.8rem 0 var(--indigo));
+    border-radius: 2rem;
 }
 
 .card:hover {
@@ -55,21 +58,32 @@
 }
 
 /*TEXT*/
+
+.inputTitle {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--ivory);
+}
+
 .fruitTitle {
     grid-column: 1/ span 2;
     grid-row: 1/2;
-    margin: auto
+    margin: 0;
+    padding: 1rem 0 0 1rem;
+    
 }
 
 .fruitDescription {
     grid-column: 1/2;
     width: 30rem;
     text-indent: 1rem;
+    padding: 0 0 1rem 1rem;
+    line-height: 1.5rem;
 }
 
 .fruitText {
-    padding: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif;
 }
 
 /*IMAGE*/
@@ -101,7 +115,6 @@
         grid-template-columns: repeat(2,1fr);
         grid-template-rows: 0.2fr 0.2fr 1fr;
         width: auto;
-        border-radius: 0;
     }
     .fruitTitle {
         grid-column: 1/ span 2;

@@ -10,11 +10,14 @@ export default function Card() {
         display: 'grid',
         backgroundColor: 'var(--darkblue)',
         color: 'var(--ivory)',
-    } : { display: 'none' };
+    } : { 
+        display: 'none',
+     };
 
     return (
         <>
             <div className={styles.main}>
+                <h1 className={styles.inputTitle}>Fruit Generator!</h1>
                 <div className={styles.inputFruit}>
                     <div className={styles.inputLine}></div>
                     <input

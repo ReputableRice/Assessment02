@@ -1,11 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "@/styles/Home.module.css";
 import NavBar from "@/components/tabbar/index.js";
 import FruitCard from "@/components/card";
 import SideBar from "@/components/sidebar";
 import FooterFruit from "@/components/footer";
-import LogoOverlay from "@/components/logo";
 
 export default function Home() {
   return (

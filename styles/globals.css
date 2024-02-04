@@ -13,5 +13,19 @@
 body {
     margin: 0;
     background-image: url('/images/background.png');
-    background-size:auto;
+    background-size:contain;
+}
+
+/*Tablet*/
+@media (min-width: 701px) and (max-width: 1120px) {
+    body {
+        background-size:cover;
+    }
+  }
+
+/*Mobile*/
+@media (max-width: 700px) {
+    body {
+        background-size:auto;
+    }
 }

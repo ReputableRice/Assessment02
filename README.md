@@ -1,9 +1,9 @@
 # Assessment 2
 ## Created by 
-Truong
-A01340547
+- Truong
+- A01340547
 ## Description
-The theme of this App is a showcase of fruits.
+The main theme about this app is showcasing different fruits, providing a succinct explanations and a brief on their history. 
 
 The values each bit represents
 - bit 1 = apple

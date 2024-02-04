@@ -7,7 +7,6 @@
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
-    font-style: italic;
     color: var(--ivory);
 }
 
@@ -17,14 +16,18 @@
 
 .mainText {
     display:flex;
+    flex-direction: column;
     width: 25rem;
     max-height: 60vh;
     padding-top: 1rem;
 
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif;
     font-size: 1.2rem;
-    font-style: italic;
     text-indent: 1rem;
+}
+
+.mainTextParagraph{
+    margin-top: 0.8rem;
 }
 
 .instructionTitleText {
@@ -32,7 +35,7 @@
 }
 
 .instructionText {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Arial, sans-serif;
     font-size: 1.2rem;
     font-style: italic;
 }

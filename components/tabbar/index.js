@@ -1,5 +1,5 @@
 import styles from "./navbar.module.css"
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import LogoOverlay from "../logo";
 
 export default function NavBar() {

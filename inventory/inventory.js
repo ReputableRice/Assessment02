@@ -32,7 +32,7 @@ export const fruitNames = {
     32: {
         fruit: 'Orange',
         image: '/images/orange.svg',
-        description: 'An orange is a fruit of various citrus species in the family Rutaceae (see list of plants known as orange); it primarily refers to Citrus × sinensis,[1] which is also called sweet orange, to distinguish it from the related Citrus × aurantium, referred to as bitter orange.',
+        description: 'An orange is a fruit of various citrus species in the family Rutaceae (see list of plants known as orange); it primarily refers to Citrus × sinensis, which is also called sweet orange, to distinguish it from the related Citrus × aurantium, referred to as bitter orange.',
         alt: 'Orange'
     }
 };

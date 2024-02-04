@@ -30,12 +30,12 @@
     width: 10rem;
     height: 0.5rem;
     border-radius: 1rem;
-    background-color: var(--lightgrey);
-    filter: drop-shadow(0 0.4rem 0 var(--darkblue));
+    background-color: var(--darkblue);
+    filter: drop-shadow(0 0.4rem 0 var(--ivory));
 }
 
 .inputBitmask::placeholder {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: gArial, Helvetica, sans-serif;
     text-indent: 1rem;
     text-align: center;
 }
@@ -52,6 +52,8 @@
 
     filter: drop-shadow(0 0.8rem 0 var(--indigo));
     border-radius: 2rem;
+    
+    transition: filter 0.2s ease-in-out;
 }
 
 .card:hover {
@@ -90,6 +92,7 @@
     grid-column: 2/3;
     grid-row: 1/ span 2;
     margin: auto;
+
     width: 50%;
 }
 

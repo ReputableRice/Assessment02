@@ -23,20 +23,23 @@
 }
 
 /*Tablet*/
-@media (min-width: 701px) and (max-width: 1120px)  {
+@media (min-width: 701px) and (max-width: 1120px) {
   .mainContent {
     flex-direction: column-reverse;
   }
+
   .sideBarPosition {
     margin-left: 0;
   }
 }
+
 /*Mobile*/
-@media (max-width: 700px)  {
+@media (max-width: 700px) {
   .mainContent {
     flex-direction: column-reverse;
     margin: 2rem;
   }
+
   .sideBarPosition {
     margin-left: 0;
   }
